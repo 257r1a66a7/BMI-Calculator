@@ -7,7 +7,10 @@ import org.springframework.web.server.ResponseStatusException;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+    "http://localhost:5173",
+    "https://257r1a66a7.github.io"
+})
 public class BmiController {
 
     @PostMapping("/bmi")
